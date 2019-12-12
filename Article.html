@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+  <title>*|MC:SUBJECT|*</title>
+  <style type="text/css">
+
+    /********** Font size Adjustement for Apple Mail **********/
+    div,
+    p,
+    li,
+    a,
+    td,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /***** Global Values *****/
+    /*****              *****/
+    a {
+      color: #00a3b4;
+    }
+    table {
+      border-spacing: 0px;
+    }
+    td {
+      padding: 0px;
+    }
+    /* used to create horizontal line under "header section" */
+    .border-bottom {
+      border-bottom: 3px solid #8b2521;
+      padding:20px 0;
+      margin-bottom: 20px;
+    }
+    .no-decoration {
+      text-decoration: none;
+    }
+
+    /***** Containers *****/
+    /*****            *****/
+    .email-container {
+      margin:0;
+      padding: 0;
+      min-width:100%;
+    }
+    .email-body {
+      max-width:760px;
+      overflow: visible;
+      margin:0 auto;
+      background: #fff;
+    }
+    .outer {
+      border-spacing:0;
+      font-family:sans-serif;
+      color:#333333;
+      margin:0 auto;
+      width:100%;
+      max-width:760px;
+      overflow: visible;
+      background-color:#fff;
+      align: center;
+    }
+
+    /***** Nested Section *****/
+    /*****                *****/
+    .nested-divider {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 440px;
+    }
+
+    /***** Horizontal Divider *****/
+    /*****                    *****/
+
+    /* Can be used for horizontal rule below "header section"
+       instead of .border-bottom */
+    .hr-divider {
+      padding: 1px;
+      background-color: #8b2521;
+    }
+
+    /***** Typography *****/
+    /*****            *****/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+      font-weight: 500;
+    }
+    .nested-text {
+      font-size: 12px;
+    }
+    .heading-1 {
+      font-size: 32px;
+    }
+    .heading-2 {
+      font-size: 29px;
+    }
+    .heading-3 {
+      font-size: 26px;
+    }
+    .heading-1,
+    .heading-2,
+    .heading-3 {
+      font-weight: 500;
+    }
+    .body-para {
+      line-height: 27px;
+      font-size: 18px;
+      margin-top: 8px;
+      color: #222;
+    }
+    .footer-para {
+      line-height: 12px;
+      font-size: 12px;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    .footer-section {
+      padding: 20px 0;
+    }
+    .open-sans {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /***** Colors *****/
+    /*****        *****/
+    .dark-red {
+      color: #8b2521;
+    }
+    .bright-red {
+      color: #c63931;
+    }
+    .dark-blue {
+      color: #006469;
+    }
+    .bright-blue {
+      color: #00a3b4;
+    }
+    .dark-purple {
+      color: #662547;
+    }
+    .bright-purple {
+      color: #a93271;
+    }
+    .dark-green {
+      color: #64701e;
+    }
+    .bright-green {
+      color: #94ab3b;
+    }
+    .dark-yellow {
+      color: #aa761a;
+    }
+    .bright-yellow {
+      color: #d8a739;
+    }
+    .dark-orange {
+      color: #ba4e27;
+    }
+    .bright-orange {
+      color: #f07a2d;
+    }
+    .text-black {
+      color: #222;
+    }
+    .bg-dark-red {
+      background-color: #8b2521;
+    }
+    .bg-bright-red {
+      background-color: #c63931;
+    }
+    .bg-dark-blue {
+      background-color: #006469;
+    }
+    .bg-bright-blue {
+      background-color: #00a3b4;
+    }
+    .bg-dark-purple {
+      background-color: #662547;
+    }
+    .bg-bright-purple {
+      background-color: #a93271;
+    }
+    .h-f-grey {
+      background-color: #e9e9e9;
+    }
+    .bg-grey {
+      background-color: #f2f2f2;
+    }
+    .bg-dark-green {
+      background-color: #64701e;
+    }
+    .bg-bright-green {
+      background-color: #94ab3b;
+    }
+    .bg-dark-yellow {
+      background-color: #aa761a;
+    }
+    .bg-bright-yellow {
+      background-color: #d8a739;
+    }
+    .bg-dark-orange {
+      background-color: #ba4e27;
+    }
+    .bg-bright-orange {
+      background-color: #f07a2d;
+    }
+    .bg-white {
+      background-color: #fff;
+    }
+
+    /********** Padding **********/
+    .pad-0 {
+      padding: 0;
+    }
+    .pad-10-0 {
+      padding: 10px 0;
+    }
+    .pad-20-0 {
+      padding: 20px 0;
+    }
+    .pad-30-0 {
+      padding: 30px 0;
+    }
+    .pad-40-0 {
+      padding: 40px 0;
+    }
+    .pad-0-10 {
+      padding: 0 10px;
+    }
+    .pad-0-20 {
+      padding: 0 20px;
+    }
+    .pad-0-30 {
+      padding: 0 30px;
+    }
+    .pad-0-40 {
+      padding: 0 40px;
+    }
+
+    /***** padding left *****/
+    /*****              *****/
+    .pad-l-10 {
+      padding-left: 10px;
+    }
+    .pad-l-20 {
+      padding-left: 20px;
+    }
+    .pad-l-30 {
+      padding-left: 30px;
+    }
+    .pad-l-40 {
+      padding-left: 40px;
+    }
+
+    /***** padding right *****/
+    /*****              *****/
+    .pad-r-10 {
+      padding-right: 10px;
+    }
+    .pad-r-20 {
+      padding-right: 20px;
+    }
+    .pad-r-30 {
+      padding-right: 30px;
+    }
+    .pad-r-40 {
+      padding-right: 40px;
+    }
+
+    /***** padding top *****/
+    /*****              *****/
+    .pad-t-10 {
+      padding-top: 10px;
+    }
+    .pad-t-20 {
+      padding-top: 20px;
+    }
+    .pad-t-30 {
+      padding-top: 30px;
+    }
+    .pad-t-40 {
+      padding-top: 40px;
+    }
+
+    /***** padding bottom *****/
+    /*****              *****/
+    .pad-b-10 {
+      padding-bottom: 10px;
+    }
+    .pad-b-20 {
+      padding-bottom: 20px;
+    }
+    .pad-b-30 {
+      padding-bottom: 30px;
+    }
+    .pad-b-40 {
+      padding-bottom: 40px;
+    }
+
+    /********** Margins **********/
+    .m-0 {
+      margin: 0;
+    }
+    .m-10-0 {
+      margin: 10px 0;
+    }
+    .m-20-0 {
+      margin: 20px 0;
+    }
+    .m-30-0 {
+      margin: 30px 0;
+    }
+    .m-40-0 {
+      margin: 40px 0;
+    }
+
+    /***** margin top *****/
+    /*****              *****/
+    .m-t-0 {
+      margin-top: 0;
+    }
+    .m-t-10 {
+      margin-top: 10px;
+    }
+    .m-t-15 {
+      margin-top: 15px;
+    }
+    .m-t-20 {
+      margin-top: 20px;
+    }
+    .m-t-25 {
+      margin-top: 25px;
+    }
+    .m-t-30 {
+      margin-top: 30px;
+    }
+    .m-t-40 {
+      margin-top: 40px;
+    }
+
+    /***** margin bottom *****/
+    /*****              *****/
+    .m-b-0 {
+      margin-bottom: 0:
+    }
+    .m-b-10 {
+      margin-bottom: 10px;
+    }
+    .m-b-20 {
+      margin-bottom: 20px;
+    }
+    .m-b-25 {
+      margin-bottom: 25px;
+    }
+    .m-b-30 {
+      margin-bottom: 30px;
+    }
+    .m-b-40 {
+      margin-bottom: 40px;
+    }
+
+    /***** margin right *****/
+    /*****              *****/
+    .m-r-10 {
+      margin-right: 10px;
+    }
+    .m-r-20 {
+      margin-right: 20px;
+    }
+    .m-r-30 {
+      margin-right: 30px;
+    }
+
+    /***** margin left *****/
+    /*****              *****/
+    .m-l-10 {
+      margin-left: 10px;
+    }
+    .m-l-20 {
+      margin-left: 20px;
+    }
+    .m-l-30 {
+      margin-left: 30px;
+    }
+
+    /***** Width *****/
+    /*****       *****/
+    .footer-w-100 {
+      width: 100%
+    }
+    .w-100 {
+      width: 100%;
+    }
+    .w-75 {
+      width: 75%;
+    }
+    .w-70 {
+      width: 70%;
+    }
+    .w-60 {
+      width: 60%;
+    }
+    .w-50 {
+      width: 50%;
+    }
+    .w-40 {
+      width: 40%;
+    }
+    .w-35 {
+      width: 35%;
+    }
+    .w-30 {
+      width: 30%;
+    }
+    .w-25 {
+      width: 25%;
+    }
+
+    /***** Floats *****/
+    /*****       *****/
+    .fl-l {
+      float: left;
+    }
+    .fl-r {
+      float: right;
+    }
+
+    /***** Postion *****/
+    /*****         *****/
+    .p-abs {
+      position: absolute;
+    }
+    .p-rel {
+      position: relative;
+    }
+
+    /***** Display *****/
+    /*****         *****/
+    .d-inline {
+      display: inline-block;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .footer-w-100, .m-w-100 {
+        width: 100% !important;
+      }
+      .m-no-pad {
+        padding: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="email-container bg-white">
+
+  <!-- max-width 760px -->
+  <div class="email-body">
+
+    <!-- Nested Section -->
+    <table role="presentation" class="outer">
+      <tr class="h-f-grey">
+        <td class="nested pad-0-30 pad-b-20 pad-t-20">
+
+          <div class="w-70 nested-divider d-inline fl-l">
+            <table role="presentation">
+              <tr>
+                <td class="nested-text">
+                  Hiring team members is hard enough. Let&rsquo;s not make it&nbsp;harder.
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="w-30 nested-divider d-inline fl-r">
+            <table role="presentation" class="fl-r">
+              <tr>
+                <td class="nested-text">
+                  <a href="*|ARCHIVE|*" style="color: #c63931;">
+                      View in browser.
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </td>
+      </tr>
+
+
+      <!-- Header Section -->
+      <tr class="title-section">
+        <table class="header-container w-100" role="presentation">
+          <tr>
+            <td class="pad-0-30 open-sans">
+
+            <table class="w-100 border-bottom" role="presentation">
+              <tr>
+                <td>
+                  <!-- styling on link looks off in the browser but works in email -->
+                  <a href="https://articles.uie.com/" target="_blank" class="no-decoration text-black" style="font-size: 55px; font-weight: 900;">
+                    <img src="https://asset.uie.com/uie_logo-black-cropped.png" width="125" alt="User Interface Engineering logo" style="margin-right: 20px;">
+                    <h1 class="d-inline">Article of the Week</h1>
+                  </a>
+
+                </td>
+              </tr>
+            </table>
+
+            </td>
+          </tr>
+        </table>
+      </tr>
+
+      <!-- Main Content -->
+      <tr class="inner-content">
+        <table role="presentation">
+          <tr>
+            <td class="pad-0-30 open-sans">
+
+              <h1 class="heading-1">Reviewing UX Portfolios: 4 High-Risk Hiring&nbsp;Mistakes</h1>
+
+              <h3 class="m-t-20" style="font-weight: bold; font-size: 20px;">8 min read by Jared M.&nbsp;Spool</h3>
+
+              <p class="body-para m-t-20"><em>Read the article published on <a href="https://articles.uie.com/reviewing-ux-portfolios-4-high-risk-hiring-mistakes/" target="_blank">Articles.UIE.com</a>.</em></p>
+
+              <p class="body-para">A UX portfolio seems like a no-brainer. You ask the candidate to give it to you. You review it. Then, if you like what you see, you interview them further and maybe you&rsquo;ll offer them the opportunity to join your&nbsp;team.</p>
+
+              <p class="body-para">However, there&rsquo;s more to reviewing a portfolio than that. And many teams make serious mistakes in the&nbsp;process.</p>
+
+              <p class="body-para">Hiring team members is hard enough. Let&rsquo;s not make it&nbsp;harder.</p>
+
+              <p class="body-para">It&rsquo;s risky to push a candidate away who, had we hired them, would&rsquo;ve done a great job for us. Losing a viable candidate means we&rsquo;ll need to spend more time finding and interviewing other candidates to fill the&nbsp;job.</p>
+
+              <p class="body-para">When we take too long to review their portfolio and give them feedback, they may decline to continue in our hiring process or refuse our job offer. This makes the hiring process more&nbsp;difficult.</p>
+
+              <p class="body-para">It&rsquo;s even worse if we hire someone who we thought looked great on paper and interviewed well, but can&rsquo;t do the work we need them to do. We then find ourselves with a messy management and morale problem. It&rsquo;s hard to work with a team member who is ill-equipped for the position, no matter how otherwise awesome they&nbsp;are.</p>
+
+              <p class="body-para">Hiring mistakes put our team&rsquo;s growth at risk. They can be avoided. Here are four hiring mistakes that teams make when reviewing UX portfolios, and how to avoid&nbsp;them.</p>
+
+              <h2 class="heading-2 pad-t-20">Mistake #1: Not defining the position&rsquo;s objectives&nbsp;upfront</h2>
+
+              <p class="body-para">Yogi Berra once said, &ldquo;If you don&rsquo;t know where you&rsquo;re going, you&rsquo;ll never get there.&rdquo; So many hiring managers and team members open up a portfolio without knowing what they need to learn from&nbsp;it.</p>
+
+              <p class="body-para">Treating a UX portfolio like a coffee-table picture book turns out to be a sure way to get a wrong understanding of the candidate. We can&rsquo;t just flip through the portfolio and smile at the pretty&nbsp;pictures.</p>
+
+              <p class="body-para">We must have specific objectives and assessment criteria for assessing each candidate&rsquo;s portfolio. Otherwise, we&rsquo;ll risk making judgement calls that are more about the aesthetics of the work and less about the capability of each&nbsp;candidate.</p>
+
+              <p class="body-para">We must have specific objectives and assessment criteria for assessing each candidate&rsquo;s portfolio. Otherwise, we&rsquo;ll risk making judgement calls that are more about the aesthetics of the work and less about the capability of each&nbsp;candidate.</p>
+
+
+              <h2 class="heading-2 pad-t-20">The hunt for <em>comparable&nbsp;evidence</em></h2>
+
+              <p class="body-para">When we&rsquo;re reviewing a portfolio, we&rsquo;re on a hunt for direct evidence of the candidate&rsquo;s comparable experience. <em>Comparable experience</em> is any work they&rsquo;ve done in their previous jobs (or in school, when we&rsquo;re considering an early-career candidate who is low on work experience) that matches the work we&rsquo;ll need them to accomplish. We use the entire interview process, to collect all the evidence we can uncover that the candidate has similar work before. If they&rsquo;ve done a great job in the past, there&rsquo;s a good chance they&rsquo;ll do a good job again, this time for&nbsp;us.</p>
+
+              <p class="body-para">The goal of reviewing a candidate&rsquo;s portfolio is simple: Can we tell if there&rsquo;s enough evidence here to suggest this candidate should be prioritized higher in our hiring process than other candidates? If we find lots of comparable experience evidence in the portfolio, we want to quickly bring this person in for interviews. If we don&rsquo;t see any evidence, we might hold up and talk to other candidates&nbsp;first.</p>
+
+              <h2 class="heading-2 pad-t-20">What will our new hire accomplish in their first&nbsp;year?</h2>
+
+              <p class="body-para">To know what evidence to look for, we need to know what the new hire&rsquo;s work will be. Will they be creating wireframes for a new design? Conducting research to identify user needs? Guiding a team to deliver a finely-designed mobile app? Rolling out a large design system to dozens of&nbsp;products?</p>
+
+              <p class="body-para">No two designers will do the same job. Even if they work on the same project, they&rsquo;ll likely divide up the work based on their strengths and experience. Having a clear picture of what we hope our new hire will accomplish in, say, their first year, will let us focus our review of every candidate&rsquo;s&nbsp;portfolio.</p>
+
+              <p class="body-para">When working with teams, we start them with a simple exercise of <a href="https://playbook.uie.com/blog/the-thank-you-note-a-sketching-tool-for-ux-hiring" target="_blank">writing a thank you note</a> to their future new hire. This is an easy way to start the conversation about what the new position will&nbsp;entail.</p>
+
+              <p class="body-para">To know what to look for in candidate portfolios, the thank you note won&rsquo;t be enough. For that, we create a much more detailed <a href="https://articles.uie.com/hiring-ux-professionals-3-critical-mistakes-to-avoid/" target="_blank">performance profile</a>. The profile describes the objectives we want our new hire to achieve in their first year. By listing out the objectives, we can create a wishlist of what we want to see in every candidate&rsquo;s UX&nbsp;portfolio.</p>
+
+              <p class="body-para">[... Rest of Article]</p>
+
+              <p class="body-para m-0"><em>Read the article published on <a href="https://articles.uie.com/reviewing-ux-portfolios-4-high-risk-hiring-mistakes/" target="_blank">Articles.UIE.com</a>.</em></p>
+
+              <hr style="margin: 20px 0;">
+
+              <h3 class="heading-3">Hiring our team&nbsp;strategically</h3>
+
+              <p class="body-para">At our 2-day <a href="https://playbook.uie.com" target="_blank"><strong>Creating a UX Strategy Playbook workshop</strong></a>, we look at every aspect of a solid UX strategy, including how we&rsquo;ll build our team to be highly effective. You&rsquo;ll balance hiring new members against training up the team you have, all to achieve the major objectives to grow your organization&rsquo;s design&nbsp;capability.</p>
+
+              <p class="body-para">Bring your team to our next workshops in Sydney, Australia (Nov 21-22 &ndash; <strong>4 seats left</strong>) and in Chattanooga, TN (Dec 4-5 &ndash; <strong>9 seats left</strong>). You&rsquo;ll leave with an action plan that will drive your organization to deliver better-designed products and services immediately. <a href="https://playbook.uie.com" target="_blank"><strong>Register&nbsp;today.</strong></a></p>
+
+              <hr style="margin: 20px 0;">
+
+              <h3 class="heading-3">Join Jared at an upcoming&nbsp;event:</h3>
+
+              <p class="body-para">
+                <a href="https://www.itx.com/ITX-UX-2019/Portland-OR" target="_blank">Portland, OR, Nov 6-8, ITX UX 2019 Beyond the&nbsp;Pixels</a><br>
+                Full-day Workshop: <em>Designing UX&nbsp;Metrics</em><br>
+                Keynote: <em>Is Design Metrically&nbsp;Opposed?</em>
+              </p>
+              <p class="body-para">
+                <a href="https://www.meetup.com/ProductTank-Melbourne/events/264775306/" target="_blank">Melbourne, Australia, Nov 19, ProductTank&nbsp;Melbourne</a><br>
+                Presentation: <em>Building a Winning UX Strategy Using the Kano&nbsp;Model</em>
+              </p>
+              <p class="body-para">
+                <a href="https://www.meetup.com/en-AU/Sydney-Design-Thinking-Meetup/events/258172552/" target="_blank">Sydney, Australia, Nov 20, Sydney Design Thinking&nbsp;Meetup</a><br>
+                Presentation: <em>The Evolution of a New UX Design&nbsp;Resolution</em>
+              </p>
+              <p class="body-para">
+                <a href="https://conveyux.com" target="_blank">Seattle, WA, Mar 3-5, Convey UX Conference</a><br>Keynote: <em>Beyond the UX Tipping Point</em>
+              </p>
+
+              <hr style="margin: 20px 0;">
+
+                <div class="d-inline m-w-100 w-35" style="margin-top: 12px;">
+                  <img src="https://asset.uie.com/Jared-headshot.png" width="100%">
+                </div>
+
+                <div class="d-inline m-w-100 w-60 fl-r m-b-20">
+                  <p class="body-para" style="font-size: 15px;">
+                    <a href="#" target="_blank">Jared M. Spool</a> is a co-founder of Center Centre and the founder of UIE. In 2016, with Dr. Leslie Jensen-Inman, he opened Center Centre, a new design school in Chattanooga, TN to create the next generation of industry-ready UX Designers. They created a revolutionary approach to vocational training, infusing Jared&rsquo;s decades of UX experience with Leslie&rsquo;s mastery of experience-based learning&nbsp;methodologies.
+                  </p>
+                </div>
+
+            </td>
+
+          </tr>
+        </table>
+      </tr>
+
+    <!-- Footer -->
+      <tr>
+        <table role="presentation" class="footer-section pad-30-0 h-f-grey w-100 open-sans">
+          <tr>
+            <td class="h-f-grey pad-0-30">
+
+              <div style="margin-top:20px;margin-bottom:20px;">
+
+                <div class="w-40 footer-w-100 fl-l d-inline">
+                  <table role="presentation">
+                    <tr>
+                      <td>
+                        <div class="m-no-pad pad-r-30">
+
+                          <img src="https://asset.uie.com/footer_logo/cc-uie_footer_logo_black.png" width="100%" alt="">
+
+                          <p class="footer-para m-t-20">510 Turnpike Street, Suite 102</p>
+                          <p class="footer-para">North Andover, MA 01845</p>
+                          <p class="footer-para">(800) 588-9855 or + 978-327-5561</p>
+
+
+
+                          <p class="footer-para m-t-25" style="line-height: 1.1rem;">
+                            Copyright 2019 Center Centre Inc.<br>
+                            All rights reserved
+                          </p>
+
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="w-60 footer-w-100 d-inline">
+                  <table role="presentation">
+                    <tr>
+                      <td>
+                        <div class="m-no-pad pad-l-30">
+
+                          <p class="footer-para">
+                            Center Centre - UIE is proud to provide you the
+                          </p>
+
+                          <p class="footer-para">
+                            expertise you need to deliver better products and&nbsp;services.
+                          </p>
+
+                          <p class="footer-para m-t-30">Questions or comments? <em><a style="color: #c63931;" href="mailto:events@uie.com">Talk to us.</a></em></p>
+
+                          <p class="footer-para"><a href="*|LIST:ADDRESS_VCARD_HREF|*" target="_blank" style="color: #c63931;"><em>Add us to your address book</em></a></p>
+                          <!-- Empty link on merge tag to override blue font color in Gmail -->
+                          <p class="footer-para m-b-30">Email was sent to: <a href="" style="color: #c63931;">*|EMAIL|*</a></p>
+
+                          <p class="footer-para">
+                            <a href="*|UNSUB|*" target="_blank" style="color: #c63931;"><em>Unsubscribe from all Center Centre - UIE&nbsp;emails.</em></a>
+                          </p>
+
+                          <p class="footer-para">
+                            <a href="*|UPDATE_PROFILE|*" target="_blank" style="color: #c63931;"><em>Unsubscribe from this Newsletter and manage email&nbsp;preferences.</em></a>
+                          </p>
+
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+
+            </td>
+
+          </tr>
+        </table>
+      </tr>
+    <!-- End of outer -->
+    </table>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+  <title>*|MC:SUBJECT|*</title>
+  <style type="text/css">
+
+  /********** Font size Adjustement for Apple Mail **********/
+  div,
+  p,
+  li,
+  a,
+  td,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    -webkit-text-size-adjust: 100%;
+  }
+
+    /***** Global Values *****/
+    /*****              *****/
+    a {
+      color: #c63931;
+    }
+    table {
+      border-spacing: 0px;
+    }
+    td {
+      padding: 0px;
+    }
+    /* used to create horizontal line under "header section" */
+    .border-bottom {
+      border-bottom: 3px solid #8b2521;
+      padding:20px 0;
+      margin-bottom: 20px;
+    }
+    .no-decoration {
+      text-decoration: none;
+    }
+
+    /***** Containers *****/
+    /*****            *****/
+    .email-container {
+      margin:0;
+      padding: 0;
+      min-width:100%;
+    }
+    .email-body {
+      max-width:760px;
+      overflow: visible;
+      margin:0 auto;
+      background: #fff;
+    }
+    .outer {
+      border-spacing:0;
+      font-family:sans-serif;
+      color:#333333;
+      margin:0 auto;
+      width:100%;
+      max-width:760px;
+      overflow: visible;
+      background-color:#fff;
+      align: center;
+    }
+
+    /***** Nested Section *****/
+    /*****                *****/
+    .nested-divider {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 440px;
+    }
+
+    /***** Horizontal Divider *****/
+    /*****                    *****/
+
+    /* Can be used for horizontal rule below "header section"
+       instead of .border-bottom */
+    .hr-divider {
+      padding: 1px;
+      background-color: #8b2521;
+    }
+
+    /***** Typography *****/
+    /*****            *****/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+      font-weight: 500;
+    }
+    .nested-text {
+      font-size: 12px;
+    }
+    .heading-1 {
+      font-size: 32px;
+    }
+    .heading-2 {
+      font-size: 29px;
+    }
+    .heading-3 {
+      font-size: 26px;
+    }
+    .heading-1,
+    .heading-2,
+    .heading-3 {
+      font-weight: bold;
+    }
+    .body-para {
+      line-height: 27px;
+      font-size: 18px;
+      margin-top: 8px;
+      color: #222;
+    }
+    .footer-para {
+      line-height: 12px;
+      font-size: 12px;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    .footer-section {
+      padding: 20px 0;
+    }
+    .open-sans {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /***** Colors *****/
+    /*****        *****/
+    .dark-red {
+      color: #8b2521;
+    }
+    .bright-red {
+      color: #c63931;
+    }
+    .dark-blue {
+      color: #006469;
+    }
+    .bright-blue {
+      color: #00a3b4;
+    }
+    .dark-purple {
+      color: #662547;
+    }
+    .bright-purple {
+      color: #a93271;
+    }
+    .dark-green {
+      color: #64701e;
+    }
+    .bright-green {
+      color: #94ab3b;
+    }
+    .dark-yellow {
+      color: #aa761a;
+    }
+    .bright-yellow {
+      color: #d8a739;
+    }
+    .dark-orange {
+      color: #ba4e27;
+    }
+    .bright-orange {
+      color: #f07a2d;
+    }
+    .text-black {
+      color: #222;
+    }
+    .bg-dark-red {
+      background-color: #8b2521;
+    }
+    .bg-bright-red {
+      background-color: #c63931;
+    }
+    .bg-dark-blue {
+      background-color: #006469;
+    }
+    .bg-bright-blue {
+      background-color: #00a3b4;
+    }
+    .bg-dark-purple {
+      background-color: #662547;
+    }
+    .bg-bright-purple {
+      background-color: #a93271;
+    }
+    .h-f-grey {
+      background-color: #e9e9e9;
+    }
+    .bg-grey {
+      background-color: #f2f2f2;
+    }
+    .bg-dark-green {
+      background-color: #64701e;
+    }
+    .bg-bright-green {
+      background-color: #94ab3b;
+    }
+    .bg-dark-yellow {
+      background-color: #aa761a;
+    }
+    .bg-bright-yellow {
+      background-color: #d8a739;
+    }
+    .bg-dark-orange {
+      background-color: #ba4e27;
+    }
+    .bg-bright-orange {
+      background-color: #f07a2d;
+    }
+    .bg-white {
+      background-color: #fff;
+    }
+
+    /********** Padding **********/
+    .pad-0 {
+      padding: 0;
+    }
+    .pad-10-0 {
+      padding: 10px 0;
+    }
+    .pad-20-0 {
+      padding: 20px 0;
+    }
+    .pad-30-0 {
+      padding: 30px 0;
+    }
+    .pad-40-0 {
+      padding: 40px 0;
+    }
+    .pad-0-10 {
+      padding: 0 10px;
+    }
+    .pad-0-20 {
+      padding: 0 20px;
+    }
+    .pad-0-30 {
+      padding: 0 30px;
+    }
+    .pad-0-40 {
+      padding: 0 40px;
+    }
+
+    /***** padding left *****/
+    /*****              *****/
+    .pad-l-10 {
+      padding-left: 10px;
+    }
+    .pad-l-20 {
+      padding-left: 20px;
+    }
+    .pad-l-30 {
+      padding-left: 30px;
+    }
+    .pad-l-40 {
+      padding-left: 40px;
+    }
+
+    /***** padding right *****/
+    /*****              *****/
+    .pad-r-10 {
+      padding-right: 10px;
+    }
+    .pad-r-20 {
+      padding-right: 20px;
+    }
+    .pad-r-30 {
+      padding-right: 30px;
+    }
+    .pad-r-40 {
+      padding-right: 40px;
+    }
+
+    /***** padding top *****/
+    /*****              *****/
+    .pad-t-10 {
+      padding-top: 10px;
+    }
+    .pad-t-20 {
+      padding-top: 20px;
+    }
+    .pad-t-30 {
+      padding-top: 30px;
+    }
+    .pad-t-40 {
+      padding-top: 40px;
+    }
+
+    /***** padding bottom *****/
+    /*****              *****/
+    .pad-b-10 {
+      padding-bottom: 10px;
+    }
+    .pad-b-20 {
+      padding-bottom: 20px;
+    }
+    .pad-b-30 {
+      padding-bottom: 30px;
+    }
+    .pad-b-40 {
+      padding-bottom: 40px;
+    }
+
+    /********** Margins **********/
+    .m-auto {
+      margin: auto;
+    }
+    .m-0 {
+      margin: 0;
+    }
+    .m-10-0 {
+      margin: 10px 0;
+    }
+    .m-20-0 {
+      margin: 20px 0;
+    }
+    .m-30-0 {
+      margin: 30px 0;
+    }
+    .m-40-0 {
+      margin: 40px 0;
+    }
+
+    /***** margin top *****/
+    /*****              *****/
+    .m-t-0 {
+      margin-top: 0;
+    }
+    .m-t-10 {
+      margin-top: 10px;
+    }
+    .m-t-20 {
+      margin-top: 20px;
+    }
+    .m-t-25 {
+      margin-top: 25px;
+    }
+    .m-t-30 {
+      margin-top: 30px;
+    }
+    .m-t-40 {
+      margin-top: 40px;
+    }
+
+    /***** margin bottom *****/
+    /*****              *****/
+    .m-b-0 {
+      margin-bottom: 0:
+    }
+    .m-b-10 {
+      margin-bottom: 10px;
+    }
+    .m-b-20 {
+      margin-bottom: 20px;
+    }
+    .m-b-25 {
+      margin-bottom: 25px;
+    }
+    .m-b-30 {
+      margin-bottom: 30px;
+    }
+    .m-b-40 {
+      margin-bottom: 40px;
+    }
+
+    /***** margin right *****/
+    /*****              *****/
+    .m-r-10 {
+      margin-right: 10px;
+    }
+    .m-r-20 {
+      margin-right: 20px;
+    }
+    .m-r-30 {
+      margin-right: 30px;
+    }
+
+    /***** margin left *****/
+    /*****              *****/
+    .m-l-10 {
+      margin-left: 10px;
+    }
+    .m-l-20 {
+      margin-left: 20px;
+    }
+    .m-l-30 {
+      margin-left: 30px;
+    }
+
+    /***** Width *****/
+    /*****       *****/
+    .footer-w-100 {
+      width: 100%
+    }
+    .w-100 {
+      width: 100%;
+    }
+    .w-75 {
+      width: 75%;
+    }
+    .w-70 {
+      width: 70%;
+    }
+    .w-60 {
+      width: 60%;
+    }
+    .w-50 {
+      width: 50%;
+    }
+    .w-40 {
+      width: 40%;
+    }
+    .w-30 {
+      width: 30%;
+    }
+    .w-25 {
+      width: 25%;
+    }
+
+    /***** Floats *****/
+    /*****       *****/
+    .fl-l {
+      float: left;
+    }
+    .fl-r {
+      float: right;
+    }
+
+    /***** Postion *****/
+    /*****         *****/
+    .p-abs {
+      position: absolute;
+    }
+    .p-rel {
+      position: relative;
+    }
+
+    /***** Display *****/
+    /*****         *****/
+    .d-inline {
+      display: inline-block;
+    }
+    .d-block {
+      display: block;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .footer-w-100, .m-w-100 {
+        width: 100% !important;
+      }
+      .m-no-pad {
+        padding: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="email-container bg-white">
+
+  <!-- max-width 760px -->
+  <div class="email-body">
+
+    <table role="presentation" class="outer">
+
+      <!-- Nested Section -->
+      <tr class="h-f-grey">
+        <td class="nested pad-0-30 pad-b-20 pad-t-20">
+
+          <div class="w-70 nested-divider d-inline fl-l">
+            <table role="presentation">
+              <tr>
+                <td class="nested-text">
+                  Using the future to guide our hard&nbsp;decisions.
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="w-30 nested-divider d-inline fl-r">
+            <table role="presentation" class="fl-r">
+              <tr>
+                <td class="nested-text">
+                  <a href="*|ARCHIVE|*">
+                      View in browser.
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </td>
+      </tr>
+
+
+      <!-- Header Section -->
+      <tr>
+        <td>
+          <table class="w-100" role="presentation">
+            <tr>
+              <td class="pad-0-30 open-sans">
+
+                <table class="w-100 border-bottom" role="presentation">
+                  <tr>
+                    <td>
+
+                        <h3 class="heading-3" style="margin: 0;">UX Strategy with Jared&nbsp;Spool</h3>
+
+                        <p class="body-para" style="margin: 0;">A Center Centre - UIE newsletter focused on bringing UX to a strategic level inside your&nbsp;organization.</p>
+
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- Main Content -->
+      <tr class="inner-content">
+        <td>
+          <table role="presentation">
+            <tr>
+              <td class="pad-0-30 open-sans">
+
+                <h1 class="heading-1">Drive Innovative Designs Using Experience&nbsp;Visions</h1>
+
+                <p class="body-para"><strong>3 minute read by Jared Spool</strong></p>
+
+                <p class="body-para">In 1991, Apple launched their Powerbook 100, one of the first general-use laptop computers. It was hailed as a marvel of engineering&mdash;a full-featured computer the size of a&nbsp;notebook.</p>
+
+                <p class="body-para">
+                  The Powerbook 100 was inspired by an internal project put together four years earlier: <a href="https://www.youtube.com/watch?v=hb4AzF6wEoc" target="_blank">The Knowledge Navigator</a>. The Knowledge Navigator wasn&rsquo;t a real machine. Apple would never build or deliver one. It was just a concept showing what a team inside Apple thought computing technology might look like 23 years in the&nbsp;future.
+                </p>
+
+                <p class="body-para">
+                  Even though it wasn&rsquo;t real, the Knowledge Navigator captured the imagination of the Powerbook 100 team. When the team faced a hard decision, they thought back to the Knowledge Navigator concept work. Given their choices, they asked themselves which choice would get them closer to building something like the Knowledge&nbsp;Navigator.
+                </p>
+
+
+                <h2 class="heading-2 pad-t-20">The future experience captured in a&nbsp;story.</h2>
+
+                <p class="body-para" style="margin-top: 4px;">
+                  The Knowledge Navigator concept is an example of what we call an <a href="https://articles.uie.com/the-experience-vision-a-self-fulfilling-ux-strategy/" target="_blank"><em>experience vision</em></a>. An experience vision is a story that demonstrates what a user&rsquo;s experience would be like years in the&nbsp;future.
+                </p>
+
+                <p class="body-para ">
+                  An experience vision doesn&rsquo;t describe a new product or service. Instead, it shows how a user&rsquo;s life would change because of the ideas embodied in the vision&rsquo;s&nbsp;story.
+                </p>
+
+                <h2 class="heading-2 pad-t-20">
+                  Guiding the hard&nbsp;decisions.
+                </h2>
+
+                <p class="body-para" style="margin-top: 4px;">
+                  When a team faces a hard design decision, there are questions around criteria they can ask to help them make their&nbsp;decision:
+                </p>
+
+                <ul>
+                  <li><p class="body-para"><em>Which choice would be faster to&nbsp;develop?</em></p></li>
+
+                  <li><p class="body-para"><em>Which choice would be cheaper to manufacture or&nbsp;deliver?</em></p></li>
+
+                  <li><p class="body-para"><em>Which choice would be easier to get into the&nbsp;market?</em></p></li>
+                </ul>
+
+                <p class="body-para">
+                  These are all great criteria to use. However, the Powerbook 100 team&rsquo;s decision-making criteria came from a different&nbsp;question:
+                </p>
+
+                <ul>
+                  <li><p class="body-para"><em>Which choice would get the team closer to building something like a Knowledge&nbsp;Navigator?</em></p></li>
+                </ul>
+
+                <p class="body-para">
+                  The Powerbook team chose this question to guide their decision-making process. It focused their answers to benefit Apple and their customers, in the long&nbsp;run.
+                </p>
+                <p class="body-para">
+                  This question put Apple&rsquo;s customers squarely in the center of the team&rsquo;s decision-making process. The experience became a way to step beyond incremental-short term&nbsp;thinking.
+                </p>
+
+                <p class="body-para">
+                  Apple didn&rsquo;t have the technical capability or knowhow to build a Knowledge Navigator in 1991. However, their teams could use it as a way to choose which technology to develop. They could <a href="https://playbook.uie.com/blog/ux-strategy-baby-steps-an-organic-approach-to-organizational-change" target="_blank">take a baby step</a> with every decision they&nbsp;made.
+                </p>
+
+                <h2 class="heading-2 pad-t-20">
+                   The experience vision gives direction across multiple products and&nbsp;releases.
+                </h2>
+
+                <p class="body-para" style="margin-top: 4px;">
+                  After the Powerbook 100 came out, we saw Apple&rsquo;s teams continue to take baby steps towards the experience vision with every new product. The Apple Newton, the MacBook product line, the iPod, and the iPhone all took steps in the direction of the Knowledge Navigator&nbsp;experience.
+                </p>
+                <p class="body-para">
+                  2010&mdash;the year the original Knowledge Navigator story took place&mdash;was the year Apple released the first iPad. The iPad was quite close to the ideas in the Knowledge&nbsp;Navigator.
+                </p>
+                <p class="body-para">
+                  Starting with the Powerbook 100, and heading all the way up to the release of the iPad, Apple continued to deliver the most innovative products. Looking back, it&rsquo;s clear that every innovation was influenced by the Knowledge&nbsp;Navigator.
+                </p>
+
+                <p class="body-para">
+                  An experience vision gives a team direction. It puts the user&rsquo;s experience in the center of every important decision. And it drives an organization to deliver innovative products and services every step of the&nbsp;way.
+                </p>
+
+                  <hr/ class="m-20-0">
+
+                  <table role="presentation" class="w-100">
+                    <tr>
+                      <td>
+
+                        <div class="w-100">
+                          <table role="presentation" class="m-no-mar">
+                            <tr>
+                              <td>
+
+                                <div class="w-70 d-inline fl-l m-w-100 m-no-pad">
+
+
+                                  <h3 class="heading-3 m-0">Lead your organization’s UX&nbsp;strategy.</h3>
+
+                                  <p class="body-para">
+                                    You need a UX strategy to deliver customer-winning products and services. In our 2-day intensive <a href="https://Playbook.uie.com" target="_blank"><strong>Creating a UX Strategy Playbook workshop</strong></a>, you and your leadership team will develop your UX strategic plan to lead a design-driven transformation throughout your&nbsp;organization.
+                                  </p>
+                                  <p class="body-para" style="margin-bottom: 0;">
+                                    Our November Sydney and Melbourne workshops and our December Chattanooga workshop are almost sold out. These workshops will fill up quickly, so don&rsquo;t delay. <a href="https://Playbook.uie.com" target="_blank"><strong>Reserve your space&nbsp;today.</strong></a>
+                                  </p>
+                                </div>
+
+                                <div class="w-30 d-inline m-w-100">
+                                  <table role="presentation">
+                                    <tr>
+                                      <td>
+                                        <div>
+                                          <img src="https://asset.uie.com/playbook_logo_black-cropped.png" width="100%" alt="image playbook logo">
+
+                                          <p class="body-para m-l-30"><strong>Chattanooga,&nbsp;TN</strong><br>
+
+                                          December&nbsp;4-5<br>
+                                          February&nbsp;5-6</p>
+
+                                          <p class="body-para m-l-30"><strong>Melbourne,&nbsp;AUS</strong><br>November&nbsp;18-19</p>
+
+                                          <p class="body-para m-l-30"><strong>Sydney,&nbsp;AUS</strong><br>November&nbsp;21-22</p>
+
+
+                                        </td>
+                                      </div>
+                                    </tr>
+                                  </table>
+                                </div>
+
+                                  <!-- <hr> -->
+
+                                  <div class="w-100 d-inline fl-l m-w-100">
+                                    <hr/ class="m-20-0">
+                                    <table role="presentation" class="m-no-mar">
+                                      <tr>
+                                        <td>
+                                          <div class="m-no-pad pad-r-30">
+
+                                            <h3 class="heading-3 pad-b-10">Join Jared at an upcoming&nbsp;event:</h3>
+
+                                            <p class="body-para m-t-0">
+                                              <a href="https://www.eventbrite.com/e/design-for-delight-workshop-with-jared-spool-tickets-71396826831" target="_blank">Burlington, MA, Nov 2, GBCACM</a><br>
+                                              Full-day Workshop: Designing for Delight: Transforming Your Designs from Good to Great</p>
+
+
+                                            <p class="body-para m-t-25">
+                                              <a href="https://designleadership.io">Toronto, ON, Nov 4-6, Design Leadership Summit</a><br>
+                                              Keynote: Beyond the UX Tipping Point</p>
+
+
+                                            <p class="body-para m-t-25">
+                                              <a href="https://www.itx.com/ITX-UX-2019/Portland-OR" target="_blank">Portland, OR, Nov 6-8, ITX UX 2019 Beyond the Pixels</a><br>
+                                              Full-day Workshop: Designing UX Metrics
+                                              Keynote: Is Design Metrically Opposed?</p>
+
+                                            <p class="body-para">
+                                            <a href="https://www.meetup.com/ProductTank-Melbourne/events/264775306/" target="_blank">Melbourne, Australia, Nov 19, ProductTank Melbourne</a>
+                                            </p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+
+                      </td>
+                    </tr>
+                  </table>
+
+                <hr/ class="m-20">
+
+                <table role="presentation" class="w-100">
+                  <tr>
+                    <td>
+
+                      <div>
+                        <p class="body-para">
+                          Did someone forward you this email? <a href="http://www.centercentre-uie.com/uxstrategy/signup/">Subscribe here.</a>
+                        </p>
+                      </div>
+
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    <!-- Footer -->
+      <tr>
+        <table role="presentation" class="footer-section pad-30-0 h-f-grey w-100 open-sans">
+          <tr>
+            <td class="h-f-grey pad-0-30">
+
+              <div style="margin-top:20px;margin-bottom:20px;">
+
+                <div class="w-40 footer-w-100 fl-l d-inline">
+                  <table role="presentation">
+                    <tr>
+                      <td>
+                        <div class="m-no-pad pad-r-30">
+
+                          <img src="https://asset.uie.com/footer_logo/cc-uie_footer_logo_black.png" width="100%" alt="">
+
+                          <p class="footer-para m-t-20">510 Turnpike Street, Suite 102</p>
+                          <p class="footer-para">North Andover, MA 01845</p>
+                          <p class="footer-para">(800) 588-9855 or + 978-327-5561</p>
+
+
+
+                          <p class="footer-para m-t-25" style="line-height: 1.1rem;">
+                            Copyright 2019 Center Centre Inc.<br>
+                            All rights reserved
+                          </p>
+
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="w-60 footer-w-100 d-inline">
+                  <table role="presentation">
+                    <tr>
+                      <td>
+                        <div class="m-no-pad pad-l-30">
+
+                          <p class="footer-para">
+                            Center Centre - UIE is proud to provide you the
+                          </p>
+
+                          <p class="footer-para">
+                            expertise you need to deliver better products and&nbsp;services.
+                          </p>
+
+                          <p class="footer-para m-t-30">Questions or comments? <em><a href="mailto:events@uie.com">Talk to us.</a></em></p>
+
+                          <p class="footer-para"><a href="*|LIST:ADDRESS_VCARD_HREF|*" target="_blank"><em>Add us to your address book</em></a></p>
+                          <!-- Empty link on merge tag to override blue font color in Gmail -->
+                          <p class="footer-para m-b-30">Email was sent to: <a href="">*|EMAIL|*</a></p>
+
+                          <p class="footer-para">
+                            <a href="*|UNSUB|*" target="_blank"><em>Unsubscribe from all Center Centre - UIE&nbsp;emails.</em></a>
+                          </p>
+
+                          <p class="footer-para">
+                            <a href="*|UPDATE_PROFILE|*" target="_blank"><em>Unsubscribe from this Newsletter and manage email&nbsp;preferences.</em></a>
+                          </p>
+
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+
+            </td>
+
+          </tr>
+        </table>
+      </tr>
+    <!-- End of outer -->
+    </table>
+  </div>
+</body>
+
+</html>
